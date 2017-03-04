@@ -1,4 +1,4 @@
-# hashcracker
+# hashcracker [![Build Status](https://travis-ci.org/hvanderlaan/hashcracker.svg?branch=master)](https://travis-ci.org/hvanderlaan/hashcracker)
 
 Hashcracker is python script for brute-forcing sha512 hashed linux passwords. In addition to hashcracker there is also a python script for creating sha512 hashed linux passwords, this script is called mkpasswd.py
 
