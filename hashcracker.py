@@ -80,6 +80,7 @@ def brute_force_hash(password):
 
 # main brute-force script
 def main():
+    ''' main function '''
     # start a try to catch the StopIteration exception wen the password is found
     try:
         # we need to check if dictionary file exists, if not exists exit with code 1
@@ -92,7 +93,7 @@ def main():
         with open(DICTIONARY) as passwordline:
             # use pool.map to iterate through dictionary file and pass line to the
             # brute-force function (pool.map(function, itterable, chunksize)
-            results = pool.map(brute_force_hash, passwordline, 100)
+            pool.map(brute_force_hash, passwordline, 100)
 
         # if script comes to this point no password was found, stop multiprocessing
         # and exit with code 1
